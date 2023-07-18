@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *main - uses _putchar to print the lower
+ * print_alphabet - uses _putchar to print the lower
  *	case alphabet.
  */
 

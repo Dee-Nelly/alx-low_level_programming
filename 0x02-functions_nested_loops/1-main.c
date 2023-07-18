@@ -1,5 +1,5 @@
 /**
- *main - check the code
+ *main - prints the alphabet in lower case
  *
  *Return: Always 0.
  */
