@@ -8,19 +8,19 @@
 
 int main(void)
 {
-	unsigned long i, a = 0, b = 1, c;
+	unsigned long i, a = 1, b = 1, c;
 
 	printf("%lu, ", a);
-
-	for (i = 0; i < 50; i++)
+	for (i = 0; i <  49; i++)
 	{
 		c = a + b;
+
 		printf("%lu", c);
 
 		b = a;
 		a = c;
 
-		if (i == 49)
+		if (i == 48)
 			break;
 		printf(", ");
 	}
