@@ -12,14 +12,10 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int diff;
-
-	diff = *s1 - *s2;
-
 	while (*s1 && *s2)
 	{
-		if (diff != 0)
-			return (diff);
+		if ((*s1 - *s2) != 0)
+			return (*s1 - *s2);
 		s1++;
 		s2++;
 	}
