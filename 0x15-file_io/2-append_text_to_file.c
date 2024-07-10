@@ -11,23 +11,22 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int i, file_descriptor, len;
+	int i, file_descriptor;
 
 	if (!filename)
 		return (-1);
-	if (text_content)
+	if (!text_content)
 		return (1);
 
 	i = 0;
 	while (text_content[i] != '\0')
 		i++;
-	len = i;
 
 	file_descriptor = open(filename, O_WRONLY | O_APPEND);
 
 	if (file_descriptor == -1)
 		return (-1);
 
-	write(file_descriptor, text_content, len);
+	write(file_descriptor, text_content, i);
 	return (1);
 }
